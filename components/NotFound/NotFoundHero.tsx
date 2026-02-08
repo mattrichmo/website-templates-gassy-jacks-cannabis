@@ -1,6 +1,6 @@
 
 import React from 'react';
-import Link from 'next/link';
+import TransitionLink from '../Common/TransitionLink';
 
 const NotFoundHero: React.FC = () => {
     return (
@@ -18,12 +18,12 @@ const NotFoundHero: React.FC = () => {
                 <p className="font-serif italic text-2xl text-white/60 mb-10">
                     &quot;Even Jack took a wrong turn once. It was 1976. He ended up in Buffalo. Don&apos;t be like Jack.&quot;
                 </p>
-                <Link
+                <TransitionLink
                     href="/"
                     className="inline-block bg-gold hover:bg-white text-primary font-bold py-4 px-10 rounded shadow-xl transition-all duration-300 uppercase tracking-widest text-sm"
                 >
                     Return to the Foyer
-                </Link>
+                </TransitionLink>
             </div>
         </section>
     );

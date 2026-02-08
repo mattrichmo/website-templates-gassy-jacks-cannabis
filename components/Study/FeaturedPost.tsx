@@ -1,6 +1,6 @@
 
 import React from 'react';
-import Link from 'next/link';
+import TransitionLink from '../Common/TransitionLink';
 import { BLOG_POSTS } from '../../constants';
 
 const FeaturedPost: React.FC = () => {
@@ -9,7 +9,7 @@ const FeaturedPost: React.FC = () => {
     return (
         <section className="px-6 md:px-12 py-16 border-b border-primary/5">
             <div className="max-w-[1400px] mx-auto text-left">
-                <Link className="group grid grid-cols-1 lg:grid-cols-2 gap-12 items-center" href={`/study/${featured.id}`}>
+                <TransitionLink className="group grid grid-cols-1 lg:grid-cols-2 gap-12 items-center" href={`/study/${featured.id}`}>
                     <div className="relative overflow-hidden aspect-[16/10] lg:aspect-[4/3] bg-primary/5">
                         <div
                             className="absolute inset-0 bg-cover bg-center sepia-effect transform group-hover:scale-105 transition-transform duration-700"
@@ -35,7 +35,7 @@ const FeaturedPost: React.FC = () => {
                             Read Full Article <span className="material-symbols-outlined text-lg">arrow_forward</span>
                         </span>
                     </div>
-                </Link>
+                </TransitionLink>
             </div>
         </section>
     );

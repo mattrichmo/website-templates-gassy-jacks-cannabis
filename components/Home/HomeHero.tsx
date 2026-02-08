@@ -1,6 +1,6 @@
 
 import React from 'react';
-import Link from 'next/link';
+import TransitionLink from '../Common/TransitionLink';
 
 const HomeHero: React.FC = () => {
     return (
@@ -36,12 +36,12 @@ const HomeHero: React.FC = () => {
                         Where heritage meets higher standards. Step into a world of curated cannabis for the modern gentleman.
                     </p>
                     <div className="pt-6">
-                        <Link
+                        <TransitionLink
                             className="inline-block bg-gold hover:bg-[#b08d4a] text-primary font-bold py-4 px-10 rounded shadow-lg transform hover:-translate-y-0.5 transition-all duration-200 tracking-wide uppercase text-sm"
                             href="/visit"
                         >
                             Visit the Shop
-                        </Link>
+                        </TransitionLink>
                     </div>
                 </div>
             </div>

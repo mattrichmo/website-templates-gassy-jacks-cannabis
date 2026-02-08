@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import Link from 'next/link';
+import TransitionLink from './TransitionLink';
 import { NAVIGATION_ITEMS } from '../../constants';
 
 const Header: React.FC = () => {
@@ -28,32 +28,32 @@ const Header: React.FC = () => {
             <div className="max-w-[1400px] mx-auto px-6 md:px-12 w-full flex items-center justify-between">
                 <div className="hidden md:flex flex-1 items-center gap-8 justify-start">
                     {leftItems.map(item => (
-                        <Link
+                        <TransitionLink
                             key={item.label}
                             className="text-primary text-sm font-medium uppercase tracking-widest hover:text-gold transition-colors"
                             href={item.href}
                         >
                             {item.label}
-                        </Link>
+                        </TransitionLink>
                     ))}
                 </div>
 
                 <div className="flex-shrink-0 flex flex-col items-center">
-                    <Link className="group flex flex-col items-center" href="/">
+                    <TransitionLink className="group flex flex-col items-center" href="/">
                         <span className="material-symbols-outlined text-4xl text-primary group-hover:text-gold transition-colors">spa</span>
                         <span className="font-serif text-xl font-bold tracking-tight text-primary leading-none mt-1">Gassy Jack's</span>
-                    </Link>
+                    </TransitionLink>
                 </div>
 
                 <div className="hidden md:flex flex-1 items-center gap-8 justify-end">
                     {rightItems.map(item => (
-                        <Link
+                        <TransitionLink
                             key={item.label}
                             className="text-primary text-sm font-medium uppercase tracking-widest hover:text-gold transition-colors"
                             href={item.href}
                         >
                             {item.label}
-                        </Link>
+                        </TransitionLink>
                     ))}
                 </div>
 
@@ -68,14 +68,14 @@ const Header: React.FC = () => {
             {isMenuOpen && (
                 <div className="absolute top-full left-0 w-full bg-hemp border-b border-primary/10 p-6 flex flex-col gap-4 md:hidden shadow-xl animate-fade-in">
                     {NAVIGATION_ITEMS.map((item) => (
-                        <Link
+                        <TransitionLink
                             key={item.label}
                             href={item.href}
                             className="text-primary text-lg font-serif font-bold uppercase tracking-widest hover:text-gold py-2 border-b border-primary/5"
                             onClick={() => setIsMenuOpen(false)}
                         >
                             {item.label}
-                        </Link>
+                        </TransitionLink>
                     ))}
                 </div>
             )}

@@ -1,6 +1,5 @@
-
 import React from 'react';
-import Link from 'next/link';
+import TransitionLink from './TransitionLink';
 import { NAVIGATION_ITEMS } from '../../constants';
 
 const Footer: React.FC = () => {
@@ -31,10 +30,10 @@ const Footer: React.FC = () => {
                         <ul className="space-y-4 text-sm text-white/70">
                             {NAVIGATION_ITEMS.map(item => (
                                 <li key={item.label}>
-                                    <Link className="hover:text-gold transition-colors" href={item.href}>{item.label}</Link>
+                                    <TransitionLink className="hover:text-gold transition-colors" href={item.href}>{item.label}</TransitionLink>
                                 </li>
                             ))}
-                            <li><Link className="hover:text-gold transition-colors" href="/privacy">Our Promise</Link></li>
+                            <li><TransitionLink className="hover:text-gold transition-colors" href="/privacy">Our Promise</TransitionLink></li>
                         </ul>
                     </div>
 
@@ -58,8 +57,8 @@ const Footer: React.FC = () => {
                 <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/40">
                     <div className="flex flex-col md:flex-row gap-4 md:gap-8 text-center md:text-left">
                         <span>© 2024 Gassy Jack's. All rights reserved.</span>
-                        <Link className="hover:text-white" href="/privacy">Privacy Policy</Link>
-                        <Link className="hover:text-white" href="/privacy">Terms of Service</Link>
+                        <TransitionLink className="hover:text-white" href="/privacy">Privacy Policy</TransitionLink>
+                        <TransitionLink className="hover:text-white" href="/privacy">Terms of Service</TransitionLink>
                     </div>
                     <div className="font-serif italic text-white/20">
                         "Stay Classy."

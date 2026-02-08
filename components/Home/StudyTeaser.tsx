@@ -1,6 +1,6 @@
 
 import React from 'react';
-import Link from 'next/link';
+import TransitionLink from '../Common/TransitionLink';
 
 const StudyTeaser: React.FC = () => {
     return (
@@ -14,9 +14,9 @@ const StudyTeaser: React.FC = () => {
                 <p className="text-charcoal/60 text-lg mb-10 font-body italic">
                     "Chasing numbers is a young man's game. The true connoisseur chases the terpene profile."
                 </p>
-                <Link className="inline-block px-8 py-3 border border-primary text-primary font-bold hover:bg-primary hover:text-hemp transition-colors uppercase text-sm tracking-wide" href="/study">
+                <TransitionLink className="inline-block px-8 py-3 border border-primary text-primary font-bold hover:bg-primary hover:text-hemp transition-colors uppercase text-sm tracking-wide" href="/study">
                     Read Article
-                </Link>
+                </TransitionLink>
             </div>
         </section>
     );

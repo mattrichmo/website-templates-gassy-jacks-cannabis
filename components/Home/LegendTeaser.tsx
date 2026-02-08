@@ -1,6 +1,6 @@
 
 import React from 'react';
-import Link from 'next/link';
+import TransitionLink from '../Common/TransitionLink';
 
 const LegendTeaser: React.FC = () => {
     return (
@@ -36,10 +36,10 @@ const LegendTeaser: React.FC = () => {
                                 Today, Gassy Jack's brings that same rebellious spirit into the light. We've traded the basement for a boutique, but the values remain unchanged: quality, community, and a damn good time.
                             </p>
                         </div>
-                        <Link className="group inline-flex items-center gap-2 text-primary font-bold border-b-2 border-primary hover:text-gold hover:border-gold transition-colors pb-1" href="/legend">
+                        <TransitionLink className="group inline-flex items-center gap-2 text-primary font-bold border-b-2 border-primary hover:text-gold hover:border-gold transition-colors pb-1" href="/legend">
                             Read the Full Story
                             <span className="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">arrow_forward</span>
-                        </Link>
+                        </TransitionLink>
                     </div>
                 </div>
             </div>
