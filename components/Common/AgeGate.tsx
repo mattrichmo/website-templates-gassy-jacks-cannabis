@@ -1,11 +1,11 @@
 
-import React from 'react';
+
 
 interface AgeGateProps {
     onVerify: (verified: boolean) => void;
 }
 
-const AgeGate: React.FC<AgeGateProps> = ({ onVerify }) => {
+const AgeGate = ({ onVerify }: AgeGateProps) => {
     return (
         <div className="fixed inset-0 z-[100] flex items-center justify-center p-4">
             <div className="absolute inset-0 bg-[#0d1f18]">

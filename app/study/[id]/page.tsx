@@ -1,5 +1,5 @@
 
-import React from 'react';
+
 import { notFound } from 'next/navigation';
 import ArticleHero from '../../../components/Article/ArticleHero';
 import ArticleContent from '../../../components/Article/ArticleContent';

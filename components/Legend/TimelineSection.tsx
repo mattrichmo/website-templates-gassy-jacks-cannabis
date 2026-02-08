@@ -1,7 +1,7 @@
 
-import React from 'react';
 
-const TimelineSection: React.FC = () => {
+
+const TimelineSection = () => {
     return (
         <section className="py-24 bg-primary text-hemp overflow-hidden relative">
             <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/black-felt.png')]"></div>

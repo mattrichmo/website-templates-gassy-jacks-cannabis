@@ -1,7 +1,7 @@
 
-import React from 'react';
 
-const LegendBio: React.FC = () => {
+
+const LegendBio = () => {
     return (
         <section className="py-24 px-6 md:px-12 bg-white relative">
             <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">

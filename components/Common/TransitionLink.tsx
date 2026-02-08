@@ -1,18 +1,18 @@
 'use client';
 
-import React from 'react';
+import { AnchorHTMLAttributes, ReactNode, MouseEvent } from 'react';
 import { useSmokeTransition } from './SmokeTransitionContext';
 
-interface TransitionLinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
+interface TransitionLinkProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
     href: string;
-    children: React.ReactNode;
+    children: ReactNode;
     className?: string;
 }
 
-const TransitionLink: React.FC<TransitionLinkProps> = ({ href, children, className, onClick, ...props }) => {
+const TransitionLink = ({ href, children, className, onClick, ...props }: TransitionLinkProps) => {
     const { navigateWithSmoke, isTransitioning } = useSmokeTransition();
 
-    const handleClick = async (e: React.MouseEvent<HTMLAnchorElement>) => {
+    const handleClick = async (e: MouseEvent<HTMLAnchorElement>) => {
         // Only intercept if it's a normal click on an internal link
         if (
             !e.defaultPrevented &&

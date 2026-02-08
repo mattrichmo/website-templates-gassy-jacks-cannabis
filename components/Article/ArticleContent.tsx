@@ -1,12 +1,12 @@
 
-import React from 'react';
+
 import { Post } from '../../types';
 
 interface ArticleContentProps {
     post: Post;
 }
 
-const ArticleContent: React.FC<ArticleContentProps> = ({ post }) => {
+const ArticleContent = ({ post }: ArticleContentProps) => {
     return (
         <div className="max-w-3xl mx-auto px-6 py-16 md:py-24">
             <div className="flex items-center justify-center gap-4 text-sm text-primary/60 mb-12 font-medium uppercase tracking-wider border-b border-primary/10 pb-8">

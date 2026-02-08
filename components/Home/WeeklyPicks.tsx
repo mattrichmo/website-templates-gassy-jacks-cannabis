@@ -1,8 +1,8 @@
 
-import React from 'react';
+
 import { WEEKLY_PICKS } from '../../constants';
 
-const WeeklyPicks: React.FC = () => {
+const WeeklyPicks = () => {
     return (
         <section className="py-24 px-6 md:px-12 bg-hemp relative border-b border-primary/5" id="stash">
             <div className="max-w-[1400px] mx-auto">

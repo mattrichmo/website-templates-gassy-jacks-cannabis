@@ -1,8 +1,8 @@
 
-import React from 'react';
+
 import TransitionLink from '../Common/TransitionLink';
 
-const HomeHero: React.FC = () => {
+const HomeHero = () => {
     return (
         <section className="relative w-full min-h-[calc(100vh-80px)] flex flex-col lg:flex-row border-b border-primary/10">
             <div className="relative w-full lg:w-1/2 h-[50vh] lg:h-auto bg-primary overflow-hidden group">

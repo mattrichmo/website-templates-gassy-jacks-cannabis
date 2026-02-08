@@ -1,9 +1,9 @@
 
-import React from 'react';
+
 import TransitionLink from '../Common/TransitionLink';
 import { BLOG_POSTS } from '../../constants';
 
-const FeaturedPost: React.FC = () => {
+const FeaturedPost = () => {
     const featured = BLOG_POSTS[0];
 
     return (

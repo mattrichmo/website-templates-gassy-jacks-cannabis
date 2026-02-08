@@ -1,9 +1,9 @@
 
 'use client';
 
-import React from 'react';
 
-const NewsletterSection: React.FC = () => {
+
+const NewsletterSection = () => {
     return (
         <section className="py-20 bg-primary text-hemp border-b-8 border-gold">
             <div className="max-w-2xl mx-auto px-6 text-center">

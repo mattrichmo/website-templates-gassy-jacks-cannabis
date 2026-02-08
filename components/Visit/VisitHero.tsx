@@ -1,7 +1,7 @@
 
-import React from 'react';
 
-const VisitHero: React.FC = () => {
+
+const VisitHero = () => {
     return (
         <section className="relative py-24 px-6 md:px-12 bg-primary overflow-hidden">
             <div className="absolute inset-0 bg-wood opacity-10 mix-blend-multiply"></div>

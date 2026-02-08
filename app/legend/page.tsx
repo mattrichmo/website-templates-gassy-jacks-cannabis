@@ -1,5 +1,5 @@
 
-import React from 'react';
+
 import LegendHero from '../../components/Legend/LegendHero';
 import LegendBio from '../../components/Legend/LegendBio';
 import TimelineSection from '../../components/Legend/TimelineSection';

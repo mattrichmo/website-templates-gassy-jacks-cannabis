@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useRef, useMemo } from 'react';
+import { useRef, useMemo } from 'react';
 import { Canvas, useFrame, useLoader } from '@react-three/fiber';
 import * as THREE from 'three';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -64,7 +64,7 @@ const SmokeParticles = ({ isCovered, count = 120 }: { isCovered: boolean; count?
     );
 };
 
-const SmokeTransition = ({ children }: { children?: React.ReactNode }) => {
+const SmokeTransition = ({ children }: { children?: any }) => {
     const { isCovered, isTransitioning } = useSmokeTransition();
 
     return (

@@ -1,5 +1,5 @@
 
-import React from 'react';
+
 import VisitHero from '../../components/Visit/VisitHero';
 import LocationDetails from '../../components/Visit/LocationDetails';
 import FAQSection from '../../components/Visit/FAQSection';

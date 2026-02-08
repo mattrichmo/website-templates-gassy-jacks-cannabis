@@ -1,7 +1,7 @@
 
-import React from 'react';
 
-const PhilosophySection: React.FC = () => {
+
+const PhilosophySection = () => {
     return (
         <section className="py-24 px-6 md:px-12 bg-[#F9F7F2] border-b border-primary/10">
             <div className="max-w-5xl mx-auto text-center">

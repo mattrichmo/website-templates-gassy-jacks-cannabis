@@ -1,8 +1,8 @@
 
-import React from 'react';
+
 import TransitionLink from '../Common/TransitionLink';
 
-const NotFoundHero: React.FC = () => {
+const NotFoundHero = () => {
     return (
         <section className="relative w-full min-h-[70vh] flex flex-col items-center justify-center bg-primary overflow-hidden px-6 text-center">
             {/* Background Haze Effect */}

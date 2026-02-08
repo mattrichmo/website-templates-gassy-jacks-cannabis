@@ -1,9 +1,9 @@
 
 'use client';
 
-import React from 'react';
 
-const LocationDetails: React.FC = () => {
+
+const LocationDetails = () => {
     return (
         <section className="relative z-10 -mt-10 px-6 md:px-12 pb-24">
             <div className="max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8">

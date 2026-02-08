@@ -1,5 +1,5 @@
 
-import React from 'react';
+
 import StudyHero from '../../components/Study/StudyHero';
 import FeaturedPost from '../../components/Study/FeaturedPost';
 import PostGrid from '../../components/Study/PostGrid';

@@ -1,7 +1,7 @@
 
-import React from 'react';
 
-const VisitTeaser: React.FC = () => {
+
+const VisitTeaser = () => {
     return (
         <section className="py-0 flex flex-col lg:flex-row bg-primary text-hemp" id="visit">
             <div className="w-full lg:w-1/2 p-12 lg:p-24 flex flex-col justify-center bg-primary relative overflow-hidden">

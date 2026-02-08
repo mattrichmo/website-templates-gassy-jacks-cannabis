@@ -1,7 +1,7 @@
 
-import React from 'react';
 
-const StudyHero: React.FC = () => {
+
+const StudyHero = () => {
     return (
         <header className="pt-24 pb-16 px-6 md:px-12 text-center border-b border-primary/5 relative overflow-hidden">
             <div className="absolute top-0 left-0 w-full h-full opacity-5 pointer-events-none bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>

@@ -1,7 +1,7 @@
 
-import React from 'react';
 
-const LegendHero: React.FC = () => {
+
+const LegendHero = () => {
     return (
         <section className="relative w-full min-h-[90vh] flex flex-col items-center justify-center border-b border-primary/10 py-20 px-6">
             <div className="absolute inset-0 z-0">

@@ -1,9 +1,9 @@
 
 'use client';
 
-import React from 'react';
 
-const ContactPostcard: React.FC = () => {
+
+const ContactPostcard = () => {
     return (
         <section className="py-24 px-6 md:px-12 bg-[#e8e4db] text-charcoal relative overflow-hidden">
             <div className="absolute inset-0 bg-wood opacity-30 mix-blend-multiply pointer-events-none"></div>

@@ -1,8 +1,8 @@
 
-import React from 'react';
+
 import TransitionLink from '../Common/TransitionLink';
 
-const NotFoundSuggestions: React.FC = () => {
+const NotFoundSuggestions = () => {
     return (
         <section className="py-20 px-6 bg-hemp">
             <div className="max-w-4xl mx-auto">

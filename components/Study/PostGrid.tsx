@@ -1,11 +1,11 @@
 
 'use client';
 
-import React from 'react';
+
 import TransitionLink from '../Common/TransitionLink';
 import { BLOG_POSTS } from '../../constants';
 
-const PostGrid: React.FC = () => {
+const PostGrid = () => {
     const gridPosts = BLOG_POSTS.slice(1);
 
     return (

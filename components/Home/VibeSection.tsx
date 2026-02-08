@@ -1,7 +1,7 @@
 
-import React from 'react';
 
-const VibeSection: React.FC = () => {
+
+const VibeSection = () => {
     return (
         <section className="py-24 px-6 bg-[#241e1b] text-hemp relative overflow-hidden" id="vibe">
             <div className="absolute inset-0 bg-gradient-to-br from-primary/90 to-[#241e1b] z-0"></div>

@@ -1,5 +1,5 @@
 
-import React from 'react';
+
 import HomeHero from '../components/Home/HomeHero';
 import WeeklyPicks from '../components/Home/WeeklyPicks';
 import VibeSection from '../components/Home/VibeSection';

@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect, ReactNode } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { usePathname } from 'next/navigation';
 import Header from './Common/Header';
@@ -31,7 +31,7 @@ const ScrollManager = () => {
     return null;
 };
 
-export default function LayoutWrapper({ children }: { children: React.ReactNode }) {
+export default function LayoutWrapper({ children }: { children: ReactNode }) {
     const [isVerified, setIsVerified] = useState<boolean>(false);
     const pathname = usePathname();
 

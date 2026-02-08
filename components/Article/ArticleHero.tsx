@@ -1,12 +1,12 @@
 
-import React from 'react';
+
 import { Post } from '../../types';
 
 interface ArticleHeroProps {
     post: Post;
 }
 
-const ArticleHero: React.FC<ArticleHeroProps> = ({ post }) => {
+const ArticleHero = ({ post }: ArticleHeroProps) => {
     return (
         <header className="relative w-full h-[60vh] flex items-end justify-center overflow-hidden bg-primary border-b-8 border-gold">
             <div

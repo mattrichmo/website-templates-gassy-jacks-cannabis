@@ -1,5 +1,5 @@
 
-import React from 'react';
+
 import NotFoundHero from '../components/NotFound/NotFoundHero';
 import NotFoundSuggestions from '../components/NotFound/NotFoundSuggestions';
 

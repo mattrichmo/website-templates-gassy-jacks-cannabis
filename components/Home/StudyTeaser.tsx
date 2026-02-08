@@ -1,8 +1,8 @@
 
-import React from 'react';
+
 import TransitionLink from '../Common/TransitionLink';
 
-const StudyTeaser: React.FC = () => {
+const StudyTeaser = () => {
     return (
         <section className="py-24 px-6 bg-white text-center border-b border-primary/5" id="study">
             <div className="max-w-2xl mx-auto">

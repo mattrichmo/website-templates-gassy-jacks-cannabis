@@ -1,8 +1,8 @@
-import React from 'react';
+
 import TransitionLink from './TransitionLink';
 import { NAVIGATION_ITEMS } from '../../constants';
 
-const Footer: React.FC = () => {
+const Footer = () => {
     return (
         <footer className="bg-primary text-hemp pt-20 pb-10 border-t-8 border-gold mt-auto">
             <div className="max-w-[1400px] mx-auto px-6 md:px-12">

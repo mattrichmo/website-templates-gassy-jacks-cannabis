@@ -1,6 +1,6 @@
 'use client';
 
-import React, { createContext, useContext, useState, useCallback, useEffect } from 'react';
+import { createContext, useContext, useState, useCallback, useEffect, ReactNode } from 'react';
 import { useRouter, usePathname } from 'next/navigation';
 
 interface SmokeTransitionContextType {
@@ -19,7 +19,7 @@ export const useSmokeTransition = () => {
     return context;
 };
 
-export const SmokeTransitionProvider = ({ children }: { children: React.ReactNode }) => {
+export const SmokeTransitionProvider = ({ children }: { children: ReactNode }) => {
     const [isCovered, setIsCovered] = useState(false);
     const [isTransitioning, setIsTransitioning] = useState(false);
     const router = useRouter();

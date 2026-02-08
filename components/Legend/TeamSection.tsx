@@ -1,8 +1,8 @@
 
-import React from 'react';
+
 import { TEAM } from '../../constants';
 
-const TeamSection: React.FC = () => {
+const TeamSection = () => {
     return (
         <section className="py-24 px-6 md:px-12">
             <div className="max-w-[1400px] mx-auto">
