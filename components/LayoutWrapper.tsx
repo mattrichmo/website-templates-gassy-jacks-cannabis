@@ -1,7 +1,6 @@
 'use client';
 
 import { useState, useEffect, ReactNode } from 'react';
-import { AnimatePresence, motion } from 'framer-motion';
 import { usePathname } from 'next/navigation';
 import Header from './Common/Header';
 import Footer from './Common/Footer';
@@ -33,12 +32,13 @@ const ScrollManager = () => {
 
 export default function LayoutWrapper({ children }: { children: ReactNode }) {
     const [isVerified, setIsVerified] = useState<boolean>(false);
-    const pathname = usePathname();
-
     useEffect(() => {
-        const verified = sessionStorage.getItem('gassy_jack_verified');
-        if (verified === 'true') {
-            setIsVerified(true);
+        if (typeof window !== 'undefined') {
+            const verified = sessionStorage.getItem('gassy_jack_verified');
+            if (verified === 'true') {
+                // Defer to next tick to avoid cascading render warning
+                setTimeout(() => setIsVerified(true), 0);
+            }
         }
     }, []);
 

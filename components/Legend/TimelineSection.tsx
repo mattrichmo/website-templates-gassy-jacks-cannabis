@@ -17,7 +17,7 @@ const TimelineSection = () => {
                         <div className="w-full md:w-5/12 text-right pr-0 md:pr-12 order-2 md:order-1 mt-6 md:mt-0">
                             <h3 className="font-serif text-4xl text-gold mb-4">1974</h3>
                             <h4 className="font-bold text-xl mb-3">The First Spark</h4>
-                            <p className="text-white/60 leading-relaxed">Yorkville village. Jack opens his "record store" which quickly becomes the neighborhood's worst-kept secret. The vibe is born.</p>
+                            <p className="text-white/60 leading-relaxed">Yorkville village. Jack opens his &quot;record store&quot; which quickly becomes the neighborhood&apos;s worst-kept secret. The vibe is born.</p>
                         </div>
                         <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-gold rounded-full border-4 border-primary z-20 hidden md:block group-hover:scale-150 transition-transform"></div>
                         <div className="w-full md:w-5/12 pl-0 md:pl-12 order-1 md:order-2">
@@ -45,7 +45,7 @@ const TimelineSection = () => {
                         <div className="w-full md:w-5/12 text-right pr-0 md:pr-12 order-2 md:order-1 mt-6 md:mt-0">
                             <h3 className="font-serif text-4xl text-gold mb-4">2024</h3>
                             <h4 className="font-bold text-xl mb-3">The Grand Re-Opening</h4>
-                            <p className="text-white/60 leading-relaxed">Legalization brings Jack's vision into the light. A flagship store that honors the past while setting the standard for the future.</p>
+                            <p className="text-white/60 leading-relaxed">Legalization brings Jack&apos;s vision into the light. A flagship store that honors the past while setting the standard for the future.</p>
                         </div>
                         <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-gold rounded-full border-4 border-primary z-20 hidden md:block group-hover:scale-150 transition-transform"></div>
                         <div className="w-full md:w-5/12 pl-0 md:pl-12 order-1 md:order-2">

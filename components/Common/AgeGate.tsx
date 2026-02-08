@@ -26,7 +26,7 @@ const AgeGate = ({ onVerify }: AgeGateProps) => {
                 <div className="relative p-12 text-center flex flex-col items-center gap-8">
                     <div className="flex flex-col items-center text-primary mb-2">
                         <span className="material-symbols-outlined text-5xl mb-2">spa</span>
-                        <span className="font-serif text-2xl font-bold tracking-tight leading-none">Gassy Jack's</span>
+                        <span className="font-serif text-2xl font-bold tracking-tight leading-none">Gassy Jack&apos;s</span>
                         <div className="w-12 h-[1px] bg-gold/50 mt-4"></div>
                     </div>
 

@@ -10,7 +10,7 @@ const Footer = () => {
                     <div className="md:col-span-1">
                         <div className="flex items-center gap-2 mb-6">
                             <span className="material-symbols-outlined text-gold text-3xl">spa</span>
-                            <span className="font-serif text-2xl font-bold text-white">Gassy Jack's</span>
+                            <span className="font-serif text-2xl font-bold text-white">Gassy Jack&apos;s</span>
                         </div>
                         <p className="text-white/60 text-sm leading-relaxed mb-6">
                             Purveyors of fine cannabis and gentlemanly accoutrements. Established in Toronto for the modern connoisseur.
@@ -56,12 +56,12 @@ const Footer = () => {
 
                 <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/40">
                     <div className="flex flex-col md:flex-row gap-4 md:gap-8 text-center md:text-left">
-                        <span>© 2024 Gassy Jack's. All rights reserved.</span>
+                        <span>© 2024 Gassy Jack&apos;s. All rights reserved.</span>
                         <TransitionLink className="hover:text-white" href="/privacy">Privacy Policy</TransitionLink>
                         <TransitionLink className="hover:text-white" href="/privacy">Terms of Service</TransitionLink>
                     </div>
                     <div className="font-serif italic text-white/20">
-                        "Stay Classy."
+                        &quot;Stay Classy.&quot;
                     </div>
                 </div>
             </div>

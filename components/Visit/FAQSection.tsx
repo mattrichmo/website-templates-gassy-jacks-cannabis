@@ -27,7 +27,7 @@ const FAQSection = () => {
                             <span className="material-symbols-outlined text-white/50 transform group-open:rotate-180 transition-transform duration-300">expand_more</span>
                         </summary>
                         <div className="p-6 pt-2 text-white/70 leading-relaxed border-t border-white/5">
-                            <p>Absolutely no exceptions. We require two pieces of government-issued photo ID for entry. One must be a primary piece (Driver's License, Passport). We take our responsibility to the community seriously. No ID, no entry.</p>
+                            <p>Absolutely no exceptions. We require two pieces of government-issued photo ID for entry. One must be a primary piece (Driver&apos;s License, Passport). We take our responsibility to the community seriously. No ID, no entry.</p>
                         </div>
                     </details>
                     <details className="group bg-primary border border-white/5 rounded overflow-hidden transition-all duration-300 open:border-gold/30">

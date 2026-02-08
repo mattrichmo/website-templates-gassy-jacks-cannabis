@@ -19,7 +19,7 @@ const ArticleContent = ({ post }: ArticleContentProps) => {
 
             <article className="prose prose-lg prose-primary mx-auto">
                 <p className="drop-cap text-xl leading-relaxed text-charcoal/90 mb-8">
-                    There was a time, before the lab tests and the regulated packaging, when you bought cannabis based on one thing: the smell. You'd walk into a dealer's living room, they'd open a mason jar, and the room would fill with the scent of pine, lemon, or skunk. Your nose knew before your brain did.
+                    There was a time, before the lab tests and the regulated packaging, when you bought cannabis based on one thing: the smell. You&apos;d walk into a dealer&apos;s living room, they&apos;d open a mason jar, and the room would fill with the scent of pine, lemon, or skunk. Your nose knew before your brain did.
                 </p>
                 <h2 className="font-serif text-3xl font-bold text-primary mt-12 mb-6">The Entourage Effect</h2>
                 <p className="text-charcoal/70 mb-8">
@@ -29,7 +29,7 @@ const ArticleContent = ({ post }: ArticleContentProps) => {
                     &quot;Chasing numbers is a young man&apos;s game. The true connoisseur chases the terpene profile.&quot;
                 </blockquote>
                 <p className="text-charcoal/70">
-                    Turning up the volume on a bad song doesn't make it a good song. Similarly, a 32% THC strain with zero terpene profile is a flat, one-dimensional experience. It's loud, but it lacks soul. It lacks character.
+                    Turning up the volume on a bad song doesn&apos;t make it a good song. Similarly, a 32% THC strain with zero terpene profile is a flat, one-dimensional experience. It&apos;s loud, but it lacks soul. It lacks character.
                 </p>
             </article>
         </div>

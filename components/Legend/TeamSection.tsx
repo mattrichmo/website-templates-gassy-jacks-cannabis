@@ -21,7 +21,7 @@ const TeamSection = () => {
                             <div className="relative overflow-hidden mb-4 border-b-4 border-gold bg-[#e8e4db]">
                                 <div className="aspect-[3/4] w-full bg-cover bg-center grayscale group-hover:grayscale-0 transition-all duration-700" style={{ backgroundImage: `url('${member.image}')` }}></div>
                                 <div className="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-primary/90 to-transparent translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                                    <p className="text-white text-xs italic">"{member.quote}"</p>
+                                    <p className="text-white text-xs italic">&quot;{member.quote}&quot;</p>
                                 </div>
                             </div>
                             <h3 className="font-serif text-xl font-bold text-primary">{member.name}</h3>

@@ -1,30 +1,42 @@
 'use client';
 
-import { useRef, useMemo } from 'react';
+import { useRef, ReactNode, useState, useEffect } from 'react';
 import { Canvas, useFrame, useLoader } from '@react-three/fiber';
 import * as THREE from 'three';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useSmokeTransition } from './SmokeTransitionContext';
 
+interface Particle {
+    position: [number, number, number];
+    rotation: number;
+    scale: number;
+    color: string;
+    speed: number;
+}
+
 const SmokeParticles = ({ isCovered, count = 120 }: { isCovered: boolean; count?: number }) => {
     const texture = useLoader(THREE.TextureLoader, '/assets/smoke-texture.png');
     const group = useRef<THREE.Group>(null);
 
-    const particles = useMemo(() => {
-        const temp = [];
+    const [particles, setParticles] = useState<Particle[]>([]);
+
+    useEffect(() => {
+        const temp: Particle[] = [];
         for (let i = 0; i < count; i++) {
             const x = (Math.random() - 0.5) * 20; // Increased spread
             const y = (Math.random() - 0.5) * 20;
             const z = (Math.random() - 0.5) * 5;
             const rotation = Math.random() * Math.PI * 2;
             const scale = 12 + Math.random() * 15; // Increased scale
+            const speed = 0.05 + Math.random() * 0.1;
 
             // White and hemp shades for joint exhale look
             const colors = ['#ffffff', '#fdfcf0', '#f5f4e8', '#e8e6d9'];
             const color = colors[Math.floor(Math.random() * colors.length)];
-            temp.push({ position: [x, y, z], rotation, scale, color, speed: 0.05 + Math.random() * 0.1 });
+            temp.push({ position: [x, y, z], rotation, scale, color, speed });
         }
-        return temp;
+        // Defer to avoid cascading render warning in effect
+        setTimeout(() => setParticles(temp), 0);
     }, [count]);
 
     useFrame((state, delta) => {
@@ -48,7 +60,7 @@ const SmokeParticles = ({ isCovered, count = 120 }: { isCovered: boolean; count?
     return (
         <group ref={group}>
             {particles.map((p, i) => (
-                <mesh key={i} position={p.position as any} rotation={[0, 0, p.rotation]}>
+                <mesh key={i} position={p.position as [number, number, number]} rotation={[0, 0, p.rotation]}>
                     <planeGeometry args={[p.scale, p.scale]} />
                     <meshLambertMaterial
                         map={texture}
@@ -64,7 +76,7 @@ const SmokeParticles = ({ isCovered, count = 120 }: { isCovered: boolean; count?
     );
 };
 
-const SmokeTransition = ({ children }: { children?: any }) => {
+const SmokeTransition = ({ children }: { children?: ReactNode }) => {
     const { isCovered, isTransitioning } = useSmokeTransition();
 
     return (

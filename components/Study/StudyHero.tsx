@@ -16,7 +16,7 @@ const StudyHero = () => {
                     <a className="border-b-2 border-transparent hover:border-gold hover:text-primary pb-1 transition-all" href="#">Culture</a>
                     <a className="border-b-2 border-transparent hover:border-gold hover:text-primary pb-1 transition-all" href="#">Education</a>
                     <a className="border-b-2 border-transparent hover:border-gold hover:text-primary pb-1 transition-all" href="#">History</a>
-                    <a className="border-b-2 border-transparent hover:border-gold hover:text-primary pb-1 transition-all" href="#">Jack's Notes</a>
+                    <a className="border-b-2 border-transparent hover:border-gold hover:text-primary pb-1 transition-all" href="#">Jack&apos;s Notes</a>
                 </div>
             </div>
         </header>

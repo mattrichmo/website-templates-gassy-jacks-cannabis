@@ -30,10 +30,10 @@ const LegendTeaser = () => {
                         <h2 className="font-serif text-5xl text-primary font-bold mb-6">The Legend of Jack</h2>
                         <div className="prose prose-lg text-charcoal/70 mb-8 font-body">
                             <p className="mb-4">
-                                They say if you remember the 70s, you weren't really there. Jack disagrees. He remembers the smoke-filled basements of Yorkville, the hushed conversations, and the communal spirit that started it all.
+                                They say if you remember the 70s, you weren&apos;t really there. Jack disagrees. He remembers the smoke-filled basements of Yorkville, the hushed conversations, and the communal spirit that started it all.
                             </p>
                             <p>
-                                Today, Gassy Jack's brings that same rebellious spirit into the light. We've traded the basement for a boutique, but the values remain unchanged: quality, community, and a damn good time.
+                                Today, Gassy Jack&apos;s brings that same rebellious spirit into the light. We&apos;ve traded the basement for a boutique, but the values remain unchanged: quality, community, and a damn good time.
                             </p>
                         </div>
                         <TransitionLink className="group inline-flex items-center gap-2 text-primary font-bold border-b-2 border-primary hover:text-gold hover:border-gold transition-colors pb-1" href="/legend">

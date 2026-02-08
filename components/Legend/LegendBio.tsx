@@ -9,18 +9,18 @@ const LegendBio = () => {
                     <h2 className="font-serif text-5xl text-primary font-bold mb-8">The Bio: From Basement to Boutique</h2>
                     <div className="prose prose-lg text-charcoal/70 font-body space-y-6">
                         <p className="drop-cap">
-                            It started with a simple belief: good people deserve good grass. In the hazy summer of 1974, Jack wasn't a CEO or a "founder." He was just the guy you knew. The one with the best records, the softest velvet armchair, and a connections list that read like a who's who of Yorkville's counter-culture.
+                            It started with a simple belief: good people deserve good grass. In the hazy summer of 1974, Jack wasn&apos;t a CEO or a &quot;founder.&quot; He was just the guy you knew. The one with the best records, the softest velvet armchair, and a connections list that read like a who&apos;s who of Yorkville&apos;s counter-culture.
                         </p>
                         <p>
-                            Jack's place was a sanctuary. A spot where lawyers rubbed elbows with musicians, and the air was always thick with ideas (and smoke). It wasn't about the transaction; it was about the ritual.
+                            Jack&apos;s place was a sanctuary. A spot where lawyers rubbed elbows with musicians, and the air was always thick with ideas (and smoke). It wasn&apos;t about the transaction; it was about the ritual.
                         </p>
                         <p>
-                            Fast forward fifty years. The laws have changed, but the philosophy hasn't. We've traded the speakeasy vibes for polished brass and legal compliance, but the soul of Gassy Jack's remains. We're still the place for the discerning gentleman stoner who appreciates quality over quantity.
+                            Fast forward fifty years. The laws have changed, but the philosophy hasn&apos;t. We&apos;ve traded the speakeasy vibes for polished brass and legal compliance, but the soul of Gassy Jack&apos;s remains. We&apos;re still the place for the discerning gentleman stoner who appreciates quality over quantity.
                         </p>
                     </div>
                     <div className="mt-10 flex items-center gap-4">
                         <div className="h-[1px] bg-gold w-12"></div>
-                        <span className="font-serif italic text-primary text-lg">"Stay classy, stay grassy." — Jack</span>
+                        <span className="font-serif italic text-primary text-lg">&quot;Stay classy, stay grassy.&quot; — Jack</span>
                     </div>
                 </div>
                 <div className="order-1 lg:order-2 relative h-[600px] w-full">

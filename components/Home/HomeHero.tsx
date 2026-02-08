@@ -26,7 +26,7 @@ const HomeHero = () => {
                 <div className="flex flex-col gap-6 max-w-lg z-10 relative">
                     <div className="absolute -top-10 -left-10 w-20 h-20 border-t-2 border-l-2 border-gold/30 hidden lg:block"></div>
                     <h1 className="font-serif text-5xl lg:text-7xl text-primary font-bold leading-[1.1]">
-                        Welcome to<br />Gassy Jack's.
+                        Welcome to<br />Gassy Jack&apos;s.
                     </h1>
                     <p className="font-serif italic text-3xl text-primary/70 font-light">
                         We kept a seat for you.

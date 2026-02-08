@@ -10,7 +10,7 @@ const PhilosophySection = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-left">
                     <div className="bg-white p-8 border border-primary/5 shadow-sm hover:shadow-md transition-shadow duration-300">
                         <h3 className="font-serif text-2xl text-primary font-bold mb-4">Quality Over Hype</h3>
-                        <p className="text-charcoal/70 leading-relaxed">We don't chase the highest THC percentages. We chase the entourage effect. The perfect cure. The smoothest burn. Numbers are for accountants; feelings are for connoisseurs.</p>
+                        <p className="text-charcoal/70 leading-relaxed">We don&apos;t chase the highest THC percentages. We chase the entourage effect. The perfect cure. The smoothest burn. Numbers are for accountants; feelings are for connoisseurs.</p>
                     </div>
                     <div className="bg-white p-8 border border-primary/5 shadow-sm hover:shadow-md transition-shadow duration-300">
                         <h3 className="font-serif text-2xl text-primary font-bold mb-4">Anti-Sterile</h3>

@@ -24,7 +24,7 @@ const LegendHero = () => {
                         className="w-full h-full bg-cover bg-center grayscale contrast-125"
                         style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuDmHM-oj6J33s4is_UnjhxjGEie2tTiPtSgMbKY6t0V0f2zhoHrjMP1wodmko_Fe1kq9XtOaLfRdiBX_DqxxZuHcEkER4h-fM_JBiJ1P0k52TJml2vtPS4u8Ke0XRmR4OhYBjS99ohFWokcx2X5Xd9P35q_enxbCnUm6t3us1RyWR8vtTkjCbNCRUHutE0ki9TjNkwxTxHX2liIgGJBu0J2Hbe8ORk5Qb47HXFjzOO4mZsuHEu6np7ICtSdgromylwoIz2l4I-1Ziw')" }}
                     ></div>
-                    <div className="absolute -bottom-10 left-0 bg-white p-2 shadow-lg transform -rotate-2 text-xs font-serif italic text-primary">Yorkville, '74</div>
+                    <div className="absolute -bottom-10 left-0 bg-white p-2 shadow-lg transform -rotate-2 text-xs font-serif italic text-primary">Yorkville, &apos;74</div>
                 </div>
                 <div className="absolute left-1/2 top-10 transform -translate-x-1/2 w-80 h-96 z-20 shadow-2xl border-4 border-gold/50 group hover:scale-105 transition-transform duration-500">
                     <div

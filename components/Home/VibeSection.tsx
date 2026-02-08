@@ -1,6 +1,8 @@
 
 
 
+import Image from 'next/image';
+
 const VibeSection = () => {
     return (
         <section className="py-24 px-6 bg-[#241e1b] text-hemp relative overflow-hidden" id="vibe">
@@ -32,10 +34,12 @@ const VibeSection = () => {
                         </div>
                         <div className="flex flex-col sm:flex-row gap-6 items-center sm:items-start">
                             <div className="size-48 shrink-0 shadow-lg rounded overflow-hidden relative group">
-                                <img
+                                <Image
                                     className="w-full h-full object-cover"
                                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIqHYsDsmFMVG0h9OP9oF1zuYNYp6YNQD67Dvu42ubFKeWlNSc7ik-Dw9Ysypkro5fxSXzwFs51YQ4J5mm9K3GzRF5qcRxysz9lzwMyvL4ssPBVvkmQpuKfqFhtSpmwGN42TS2CA4IjGFe4N4ELSlRtJ7aTBcMFG7Fk41QAZcDWH_UhPyADwQe2DjFlhOwyntgsPaR19Ua0471QfY7dQcmDvbiqS-t_HCL9SjpVUut5fbs4UMuj2GrHrRDVk2Z95q9qzyh7hX1_YU"
                                     alt="Vinyl"
+                                    width={200}
+                                    height={200}
                                 />
                             </div>
                             <div className="flex-1 w-full pt-2 text-center sm:text-left">

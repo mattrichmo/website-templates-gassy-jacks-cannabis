@@ -41,7 +41,7 @@ const Header = () => {
                 <div className="flex-shrink-0 flex flex-col items-center">
                     <TransitionLink className="group flex flex-col items-center" href="/">
                         <span className="material-symbols-outlined text-4xl text-primary group-hover:text-gold transition-colors">spa</span>
-                        <span className="font-serif text-xl font-bold tracking-tight text-primary leading-none mt-1">Gassy Jack's</span>
+                        <span className="font-serif text-xl font-bold tracking-tight text-primary leading-none mt-1">Gassy Jack&apos;s</span>
                     </TransitionLink>
                 </div>
 

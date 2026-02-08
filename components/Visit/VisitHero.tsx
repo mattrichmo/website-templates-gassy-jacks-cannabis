@@ -11,7 +11,7 @@ const VisitHero = () => {
                 <h1 className="font-serif text-6xl md:text-8xl text-hemp font-bold mb-6">Visit the Lounge</h1>
                 <div className="w-32 h-1 bg-gold mx-auto mb-8"></div>
                 <p className="font-serif italic text-2xl text-white/60 max-w-2xl mx-auto font-light">
-                    "A sanctuary for the refined palate. Where the noise of the city fades, and the conversation begins."
+                    &quot;A sanctuary for the refined palate. Where the noise of the city fades, and the conversation begins.&quot;
                 </p>
             </div>
         </section>
