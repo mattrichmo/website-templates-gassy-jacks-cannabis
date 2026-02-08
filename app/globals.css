@@ -1,26 +1,122 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-primary: #1b3b2f;
+  /* Jack's Velvet Green */
+  --color-gold: #C5A059;
+  /* Yorkville Gold */
+  --color-hemp: #F4F1EA;
+  /* Hemp Paper */
+  --color-charcoal: #262626;
+  /* Charcoal Ash */
+  --color-rust: #B85C38;
+  /* Retro Rust */
+  --color-background-light: #F4F1EA;
+  --color-background-dark: #151d1a;
+
+  /* Background Patterns */
+  --bg-grain: url('data:image/svg+xml,%3Csvg viewBox=%220 0 400 400%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.9%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22 opacity=%220.05%22/%3E%3C/svg%3E');
+  /* Note: The asset harvester will eventually replace this remote URL with a local one */
+  --bg-wood: url('https://www.transparenttextures.com/patterns/wood-pattern.png');
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-primary: var(--color-primary);
+  --color-gold: var(--color-gold);
+  --color-hemp: var(--color-hemp);
+  --color-charcoal: var(--color-charcoal);
+  --color-rust: var(--color-rust);
+  --color-background-light: var(--color-background-light);
+  --color-background-dark: var(--color-background-dark);
+
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-inter);
+  --font-serif: var(--font-playfair);
+  --font-body: var(--font-dm-sans);
+
+  --background-image-grain: var(--bg-grain);
+  --background-image-wood: var(--bg-wood);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* Material Symbols Rendering Fixes */
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  font-feature-settings: 'liga';
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom Utilities */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.glass {
+  background: rgba(244, 241, 234, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.drop-cap:first-letter {
+  float: left;
+  font-family: var(--font-playfair), serif;
+  font-size: 5rem;
+  line-height: 4rem;
+  padding-top: 4px;
+  padding-right: 12px;
+  color: var(--color-gold);
+  font-weight: 700;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
+.sepia-effect {
+  filter: sepia(0.6) contrast(1.1) brightness(0.9);
+  transition: filter 0.5s ease;
+}
+
+.group:hover .sepia-effect {
+  filter: sepia(0) contrast(1) brightness(1);
+}
+
+.postcard-shadow {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04), 10px 10px 0px 0px rgba(27, 59, 47, 0.2);
+}
+
+.map-container iframe {
+  filter: grayscale(1) sepia(0.2) hue-rotate(90deg) brightness(0.9) contrast(1.1);
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-hemp);
+  color: var(--color-charcoal);
 }
